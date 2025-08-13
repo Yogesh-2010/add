@@ -1,0 +1,216 @@
+/* ===== RESET DEFAULTS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo h2 {
+    font-size: 28px;
+    color: #00AEEF; /* BMW Blue */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00AEEF;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 80vh;
+    background: url('bmw-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #00AEEF;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.hero button:hover {
+    background-color: #007bb5;
+    transform: scale(1.05);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #00AEEF;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== VIDEO ===== */
+#videos video {
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* ===== MAPS ===== */
+#maps iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* ===== FORM ===== */
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bb5;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    animation: scroll-left 10s linear infinite;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    header nav ul {
+        gap: 10px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/m-wallpaper/bmw-m4-cs-sd-01.jpg?imwidth=1440); 
+    background-size: cover;      
+    background-position: center;  
+    background-attachment: fixed; 
+    color: white; 
+}
+.notes {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.notes li {
+    margin: 8px 0;
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}

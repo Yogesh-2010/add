@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Web Page</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2><b>BMW</b></h2>
+            <img src="BMW.svg.png" alt="BMW Logo" height="80">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#maps">MAPS</a></li>
+                <li><a href="#booking">BOOKING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Experience the Ultimate Driving Machine</h1>
+            <p>BMW – Engineering excellence, luxury, and performance since 1916.</p>
+
+            <!-- Added BMW feature notes -->
+            <ul class="notes">
+                <li>✔ Precision German engineering for unmatched performance</li>
+                <li>✔ Cutting-edge technology meets timeless design</li>
+                <li>✔ Luxury interiors tailored for ultimate comfort</li>
+                <li>✔ Sustainable innovations for a cleaner future</li>
+            </ul>
+
+            <a href="https://www.carwale.com/bmw-cars/" class="cs" target="_blank">
+                <button>Explore Models</button>
+            </a>
+        </section>
+
+        <section id="about">
+            <h2>About BMW</h2>
+            <p>BMW is a German multinational company producing luxury vehicles and motorcycles. 
+               Known for its innovation and driving pleasure, BMW remains a leader in automotive 
+               design and technology.</p>
+        </section>
+
+        <section id="videos">
+            <h2>BMW Videos</h2>
+            <video width="560" height="315" controls>
+                <source src="THE M3 CS (2023)(1080P_HD).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="maps">
+            <h2>Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509527!2d144.95373531531584!3d-37.81627917975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE0LjEiRQ!5e0!3m2!1sen!2sus!4v1615199188896!5m2!1sen!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section id="booking">
+            <h2>Book a Test Drive</h2>
+            <form>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="model">Preferred Model:</label><br>
+                <select id="model" name="model" required>
+                    <option value="">--Select Model--</option>
+                    <option value="BMW 3 Series">BMW 3 Series</option>
+                    <option value="BMW 5 Series">BMW 5 Series</option>
+                    <option value="BMW X5">BMW X5</option>
+                </select><br><br>
+
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="scrolling-text">
+            THANK YOU FOR VISITING MY PAGE
+        </div>
+    </footer>
+
+</body>
+</html>
